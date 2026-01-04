@@ -3,7 +3,7 @@ import { networkError } from "../Errors";
 
 const sendRequest = async () => {
   try {
-    const res = await fetch(`${BaseUrl}/top/playlist?realIP=116.25.146.177`, {
+    const res = await fetch(`${BaseUrl}/top/playlist?randomCNIP=true`, {
       method: "POST",
       body: JSON.stringify({ limit: 8, order: "hot" }),
       headers: {

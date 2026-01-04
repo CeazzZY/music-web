@@ -35,7 +35,7 @@ export default function Playlist() {
       const res = await fetch(
         `${BaseUrl}/top/playlist?limit=35&offset=${
           35 * page
-        }&cat=${category}&realIP=116.25.146.177`
+        }&cat=${category}&randomCNIP=true`
       );
       const data = await res.json();
       console.log(data);

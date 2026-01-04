@@ -33,7 +33,7 @@ interface Banner {
 }
 
 const sendRequest = async () => {
-  const res = await fetch(`${BaseUrl}/banner?realIP=116.25.146.177`, {
+  const res = await fetch(`${BaseUrl}/banner?randomCNIP=true`, {
     method: "POST",
     body: JSON.stringify({ type: 0 }),
     headers: {

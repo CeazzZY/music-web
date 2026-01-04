@@ -4,7 +4,7 @@ import { networkError } from "../Errors";
 const getTopArtists = async () => {
   try {
     const res = await fetch(
-      `${BaseUrl}/top/artists?limit=5&realIP=116.25.146.177`,
+      `${BaseUrl}/top/artists?limit=5&randomCNIP=true`,
       {
         mode: "cors",
         method: "POST",

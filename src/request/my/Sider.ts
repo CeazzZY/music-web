@@ -4,7 +4,7 @@ import { networkError } from "../Errors";
 const getUserPlaylist = async (id: number, controller: AbortController) => {
   let signal = controller.signal;
   try {
-    const res = await fetch(`${BaseUrl}/user/playlist?realIP=116.25.146.177`, {
+    const res = await fetch(`${BaseUrl}/user/playlist?randomCNIP=true`, {
       method: "POST",
       body: JSON.stringify({ uid: id }),
       headers: httpHeader,

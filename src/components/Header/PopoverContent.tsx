@@ -16,7 +16,7 @@ export default function PopoverContent() {
   const props = useContext(LoginContext);
   // const isLogin = useLoginStatus();
   const logout = useCallback(async () => {
-    const res = await fetch(`${BaseUrl}/logout?realIP=116.25.146.177`, {
+    const res = await fetch(`${BaseUrl}/logout?randomCNIP=true`, {
       method: "POST",
       credentials: "include",
       headers: httpHeader,

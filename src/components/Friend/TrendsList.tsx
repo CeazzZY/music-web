@@ -207,7 +207,7 @@ export default function TrendsList() {
   const sendRequest = useCallback(async () => {
     try {
       const res = await fetch(
-        `${BaseUrl}/event?lasttime=${lasttimeRef.current}&realIP=116.25.146.177`,
+        `${BaseUrl}/event?lasttime=${lasttimeRef.current}&randomCNIP=true`,
         {
           method: "GET",
           credentials: "include",

@@ -26,7 +26,7 @@ export default function useHttpRequestFunc() {
         let queryString: string = jsonToQueryString(requestData);
         api += queryString;
       }
-      const res = await fetch(`${BaseUrl}${api}?realIP=116.25.146.177`, {
+      const res = await fetch(`${BaseUrl}${api}?randomCNIP=true`, {
         method: method,
         body: method.toUpperCase() === "POST" ? data : undefined,
         credentials: credentials,

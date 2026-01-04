@@ -4,7 +4,7 @@ import { networkError } from "../Errors";
 const getRecommendPlaylists = async () => {
   try {
     const res = await fetch(
-      `${BaseUrl}/recommend/resource?realIP=116.25.146.177`,
+      `${BaseUrl}/recommend/resource?randomCNIP=true`,
       {
         method: "GET",
         mode: "cors",

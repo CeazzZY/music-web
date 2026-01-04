@@ -31,7 +31,7 @@ export default function useHttpRequest({
     const sendReuqest = async () => {
       try {
         if (method.toUpperCase() === "POST") {
-          const res = await fetch(`${BaseUrl}${api}?realIP=116.25.146.177`, {
+          const res = await fetch(`${BaseUrl}${api}?randomCNIP=true`, {
             method: method,
             credentials: credentials,
             headers: httpHeader,
@@ -42,7 +42,7 @@ export default function useHttpRequest({
         } else if (method === "GET") {
           let queryString = jsonToQueryString(JSON.parse(requestData));
           const res = await fetch(
-            `${BaseUrl}${api}${queryString}?realIP=116.25.146.177`,
+            `${BaseUrl}${api}${queryString}?randomCNIP=true`,
             {
               method: method,
               credentials: credentials,

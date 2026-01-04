@@ -5,7 +5,7 @@ import { PlayUrl } from "./PlayUri";
 export const getMusicUrl = async (id: number) => {
   try {
     const res = await fetch(
-      `${PlayUrl}/song/url?id=${id}&realIP=116.25.146.177`,
+      `${PlayUrl}/song/url?id=${id}&randomCNIP=true`,
       {
         method: "GET",
         headers: httpHeader,
