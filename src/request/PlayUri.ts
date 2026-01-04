@@ -1,1 +1,1 @@
-export const PlayUrl = `https://netease-cloud-music-api-tohsaka888.vercel.app`;
+export const PlayUrl = `https://api-enhanced-gilt-sigma.vercel.app`;
